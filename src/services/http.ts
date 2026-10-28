@@ -1,6 +1,7 @@
 import type { ErroApi } from '../types/api'
 
 const URL_BASE = import.meta.env.VITE_API_URL ?? 'https://sprint4java-api.onrender.com/api'
+const TEMPO_LIMITE_MS = 90000
 
 export class ErroDeRequisicao extends Error {
   status: number
@@ -12,10 +13,14 @@ export class ErroDeRequisicao extends Error {
 }
 
 export async function requisicao<T>(caminho: string, opcoes: RequestInit = {}): Promise<T> {
+  const controlador = new AbortController()
+  const temporizador = setTimeout(() => controlador.abort(), TEMPO_LIMITE_MS)
+
   try {
     const resposta = await fetch(URL_BASE + caminho, {
       ...opcoes,
       headers: { 'Content-Type': 'application/json', ...opcoes.headers },
+      signal: controlador.signal,
     })
 
     if (!resposta.ok) {
@@ -29,6 +34,11 @@ export async function requisicao<T>(caminho: string, opcoes: RequestInit = {}): 
     if (erro instanceof ErroDeRequisicao) {
       throw erro
     }
+    if (erro instanceof DOMException && erro.name === 'AbortError') {
+      throw new ErroDeRequisicao('O servidor demorou demais para responder. Tente novamente.', 0)
+    }
     throw new ErroDeRequisicao('Não foi possível falar com a API. Confira sua internet e tente novamente.', 0)
+  } finally {
+    clearTimeout(temporizador)
   }
 }
