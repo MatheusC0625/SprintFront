@@ -9,6 +9,8 @@ import Faq from './pages/Faq'
 import Contato from './pages/Contato'
 import Missoes from './pages/Missoes'
 import MissaoDetalhe from './pages/MissaoDetalhe'
+import Ranking from './pages/Ranking'
+import Carteira from './pages/Carteira'
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
           <Route path="solucao" element={<Solucao />} />
           <Route path="missoes" element={<Missoes />} />
           <Route path="missoes/:id" element={<MissaoDetalhe />} />
+          <Route path="ranking" element={<Ranking />} />
+          <Route path="carteira" element={<Carteira />} />
           <Route path="integrantes" element={<Integrantes />} />
           <Route path="integrantes/:id" element={<IntegranteDetalhe />} />
           <Route path="faq" element={<Faq />} />
