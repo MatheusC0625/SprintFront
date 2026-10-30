@@ -12,6 +12,7 @@ import MissaoDetalhe from './pages/MissaoDetalhe'
 import Ranking from './pages/Ranking'
 import Carteira from './pages/Carteira'
 import Usuarios from './pages/Usuarios'
+import UsuarioFormulario from './pages/UsuarioFormulario'
 
 function App() {
   return (
@@ -26,6 +27,8 @@ function App() {
           <Route path="ranking" element={<Ranking />} />
           <Route path="carteira" element={<Carteira />} />
           <Route path="usuarios" element={<Usuarios />} />
+          <Route path="usuarios/novo" element={<UsuarioFormulario />} />
+          <Route path="usuarios/:id/editar" element={<UsuarioFormulario />} />
           <Route path="integrantes" element={<Integrantes />} />
           <Route path="integrantes/:id" element={<IntegranteDetalhe />} />
           <Route path="faq" element={<Faq />} />
