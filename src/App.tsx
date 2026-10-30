@@ -11,6 +11,7 @@ import Missoes from './pages/Missoes'
 import MissaoDetalhe from './pages/MissaoDetalhe'
 import Ranking from './pages/Ranking'
 import Carteira from './pages/Carteira'
+import Usuarios from './pages/Usuarios'
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="missoes/:id" element={<MissaoDetalhe />} />
           <Route path="ranking" element={<Ranking />} />
           <Route path="carteira" element={<Carteira />} />
+          <Route path="usuarios" element={<Usuarios />} />
           <Route path="integrantes" element={<Integrantes />} />
           <Route path="integrantes/:id" element={<IntegranteDetalhe />} />
           <Route path="faq" element={<Faq />} />
