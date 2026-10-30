@@ -5,6 +5,7 @@ const links = [
   { to: '/missoes', label: 'Missões' },
   { to: '/ranking', label: 'Ranking' },
   { to: '/carteira', label: 'Carteira' },
+  { to: '/usuarios', label: 'Usuários' },
   { to: '/sobre', label: 'Sobre' },
   { to: '/solucao', label: 'Solução' },
   { to: '/integrantes', label: 'Integrantes' },
