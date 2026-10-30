@@ -7,6 +7,7 @@ import Integrantes from './pages/Integrantes'
 import IntegranteDetalhe from './pages/IntegranteDetalhe'
 import Faq from './pages/Faq'
 import Contato from './pages/Contato'
+import Missoes from './pages/Missoes'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="sobre" element={<Sobre />} />
           <Route path="solucao" element={<Solucao />} />
+          <Route path="missoes" element={<Missoes />} />
           <Route path="integrantes" element={<Integrantes />} />
           <Route path="integrantes/:id" element={<IntegranteDetalhe />} />
           <Route path="faq" element={<Faq />} />
