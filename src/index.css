@@ -10,6 +10,7 @@
   --color-teal: #00b4a6;
   --color-fundo: #f4f7ff;
   --color-muted: #6b7280;
+  --breakpoint-lg: 62rem;
 }
 
 body {

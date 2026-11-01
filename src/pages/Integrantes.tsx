@@ -27,7 +27,7 @@ export default function Integrantes() {
         />
 
         {filtrados.length > 0 ? (
-          <ul className="grid grid-cols-[repeat(auto-fill,minmax(220px,1fr))] gap-5">
+            <ul className="grid gap-4 sm:grid-cols-2 sm:gap-5 lg:grid-cols-3">
             {filtrados.map((member) => (
               <MemberCard key={member.id} member={member} />
             ))}
