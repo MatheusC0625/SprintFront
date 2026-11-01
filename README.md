@@ -4,7 +4,7 @@ disciplina Front-End Design Engineering (FIAP).
 Tecnologias
 - React 19 (useState, UseEffect e useContext`)
 - Vite
-- TypeScript em modo `strict`
+- TypeScript em modo strict
 - Tailwind CSS v4 (breakpoints sm, md, lg e xl)
 - React Router DOM
 - React Hook Form
