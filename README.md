@@ -1,6 +1,13 @@
 Front-end da NUVA, plataforma de gamificação do Challenge SoulUp que transforma ações sustentáveis (missões deenergia, água, floresta e resíduos) em SoulCoins, convertidos em crédito na conta de luz. Este repositório reúne a Sprint 03 (migração do site estático para React) e a Sprint 04 (integração com a API Java e publicação na Vercel) da
 disciplina Front-End Design Engineering (FIAP).
 
+Como usar
+- Repositório no GitHub: https://github.com/MatheusC0625/sprint3-nuva-react
+- Vídeo no YouTube: https://www.youtube.com/watch?v=_oZqxU2oLRo
+- Aplicação na Vercel: https://sprint-front-nine.vercel.app
+- API em produção: https://sprint4java-api.onrender.com/api
+- Para rodar localmente: npm install e depois npm run dev (abre em http://localhost:5173)
+
 Tecnologias
 - React 19 (useState, UseEffect e useContext`)
 - Vite
@@ -14,5 +21,11 @@ Tecnologias
 
 PS:
 O grupo original era formado por Lucas Kaftan, Matheus Iumati Ruas, Lucas Luque Cabral, Vinicius Silveira Espósito e eu. A partir da Sprint 3 os demais integrantes deixaram a disciplina e, com conhecimento e autorização do Scrum Master da turma e do próprio grupo, o desenvolvimento passou a ser conduzido individualmente por mim.
+
+
+Repositório no GitHub: https://github.com/MatheusC0625/sprint3-nuva-react
+Vídeo no YouTube: https://www.youtube.com/watch?v=_oZqxU2oLRo
+Aplicação na Vercel: https://sprint-front-nine.vercel.app
+API em produção: https://sprint4java-api.onrender.com/api
 
 Matheus Costa Rodrigues dos Santos — RM 573146 — 1TDSPV 
